@@ -54,6 +54,7 @@ order_train = preprocess(order_train, params)
 order_test = preprocess(order_test, params)
 
 #Computing Error of Different order
+#The order range from 0 to 4, all been normolized
 error_train = list()
 error_test = list()
 for i in range(0,5):
@@ -75,6 +76,7 @@ print("test error of different order:\n", error_test)
 
 
 #Different size of Training Set
+#The size of data includes 20%, 40%, 60%, 80%, 100% percents of original training data
 p = [0.2, 0.4, 0.6, 0.8, 1]
 percent = np.dot(np.size(y_train),p)
 
