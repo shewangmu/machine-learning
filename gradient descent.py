@@ -98,7 +98,7 @@ print("the train_error of closed form:\n", err)
 err = mse(X_test, y_test,w)
 print("the test error of cloed form\n", err)
 
-#Prob.1e
+#Testing the corectness by shuffle data selected as training or test data.
 features_orig = dataset.data
 labels_orig = dataset.target
 Ndata = len(features_orig)
